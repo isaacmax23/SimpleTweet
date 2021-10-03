@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/ivProfileimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginBaseline="0dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvscreenname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvtime"
+        app:layout_constraintStart_toEndOf="@+id/ivProfileimage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Screenname" />
+
+    <TextView
+        android:id="@+id/tvTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/ivProfileimage"
+        app:layout_constraintTop_toBottomOf="@+id/tvscreenname"
+        tools:text="Tweets" />
+
+    <TextView
+        android:id="@+id/tvtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tvscreenname"
+        tools:layout_editor_absoluteY="0dp"
+        tools:text="time" />
+</androidx.constraintlayout.widget.ConstraintLayout>
